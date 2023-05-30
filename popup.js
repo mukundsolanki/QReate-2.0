@@ -9,7 +9,17 @@ document.addEventListener("DOMContentLoaded", function () {
     // Setting source of image
     qrCodeImg.src = "https://api.qrserver.com/v1/create-qr-code/?data=" + encodeURIComponent(url) + "&size=200x200";
     qrCodeDiv.appendChild(qrCodeImg);
+    
+    // Setting custom url source
+    let imgBox = document.getElementById("imgBox");
+    let qrImage = document.createElement("img");
+    let qrText = document.getElementById("qrText");
+    let btn = document.getElementById("btn");
 
+    btn.addEventListener("click" , function(){
+      qrImage.src = "https://api.qrserver.com/v1/create-qr-code/?data=" + qrText.value + "&size=200x200";
+      imgBox.appendChild(qrImage);
+    });
 
 
     // var downloadButton = document.getElementById("downloadButton");

@@ -6,6 +6,7 @@
 body{
   width: 400px;
   height: 400px;
+  /* background-image: linear-gradient(to left bottom, #1f0537, #7c0146, #c43d2f, #d89300, #a8eb12); */
 }
 
 img{
@@ -35,6 +36,26 @@ h3{
   margin-bottom: 10px;
 }
 
-#qrText{
+/* #qrText{
+  text-align: center;
+} */
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container input{
+  margin: 5px;
+}
+
+#imgBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p{
   text-align: center;
 }
