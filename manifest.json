@@ -2,9 +2,14 @@
   "manifest_version": 2,
   "name": "QR Code Generator",
   "version": "1.0",
-  "description": "Generate QR codes for the current web page",
+  "description": "QREATE 2.0 generates QR Codes for all your webpages that tou are browsing and you can also create custom QR Codes for your links and Texts!",
   "permissions": ["activeTab"],
   "browser_action": {
     "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "logos/logo16.png",
+    "48": "logos/logo48.png",
+    "128": "logos/logo128.png"
   }
 }
