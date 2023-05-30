@@ -17,8 +17,15 @@ document.addEventListener("DOMContentLoaded", function () {
     let btn = document.getElementById("btn");
 
     btn.addEventListener("click" , function(){
-      qrImage.src = "https://api.qrserver.com/v1/create-qr-code/?data=" + qrText.value + "&size=200x200";
+
+      if(qrText.value == "")
+      {
+        qrImage.style.display="none";
+      }
+      else{
+        qrImage.src = "https://api.qrserver.com/v1/create-qr-code/?data=" + qrText.value + "&size=200x200";
       imgBox.appendChild(qrImage);
+      }
     });
 
 
