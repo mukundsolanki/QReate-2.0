@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  width: 400px;
+  height: 400px;
+}
+
+img{
+  width: 50%;
+  height: 50%;
+}
+
+.text{
+  font-size: 25px;
+  text-align: center;
+}  
+
+#qrcode{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first{
+  text-align: center;
+  font-size: 30px;
+}
+
+h3{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#qrText{
+  text-align: center;
+}
